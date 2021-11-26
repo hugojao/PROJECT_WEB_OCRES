@@ -1,0 +1,20 @@
+navbar {
+    height: 50pt;
+    background-color: #FFE3BA;
+
+}
+.liste{
+    list-style-type:none;
+    background-color: #FFE3BA;
+    height: 100%;
+    display : flex;
+    justify-content:left;
+    align-items: center;
+    position: relative;
+    font-size: x-large;
+}
+.items{
+    margin-right: 10px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
