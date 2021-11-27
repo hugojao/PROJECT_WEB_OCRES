@@ -7,10 +7,12 @@ const Home = () => {
     return (
         <div>
             <Navbar/>
-            <Meme/>
-        <h1>TESTs</h1>
-        </div>
 
+            <Meme/>
+      
+          <h1>TESTs</h1>
+
+        </div>
     );
 };
 

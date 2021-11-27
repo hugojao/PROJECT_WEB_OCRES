@@ -5,9 +5,8 @@ const Admin = () => {
     return (
         <div>
             <Navbar/>
-            <h1>PAGE ADMIN</h1>
+            <h1 className="titre_admin">PAGE ADMIN</h1>
         </div>
     );
 };
-
 export default Admin;
