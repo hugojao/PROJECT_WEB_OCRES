@@ -1,7 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 
-
 const Admin = () => {
     return (
         <div>
@@ -10,5 +9,4 @@ const Admin = () => {
         </div>
     );
 };
-
 export default Admin;
