@@ -1,28 +1,27 @@
 *
 {
-    font-family: 'Noto Sans', 'sans-serif';
+    font-family: 'Century gothic', 'sans-serif';
     background-color: #E94C4C;
 }
 
 .navbar {
-    height: 15pt;
+    height: 60px;
     background-color: #FFE3BA;
-    display: flex;
-    text-align: left;
-    
     font-size: 20px;
-    max-width: 100%;
-    padding: 40px;
     text-transform: uppercase;
     text-decoration: none;
+    display: flex;
+    flex-direction: row;
 }
 .Accueil
 {
     text-transform: uppercase;
     text-decoration: none;
     background-color:#FFE3BA;
-    margin-left: 5px;
     margin-right: 15px;
+    padding: 15px;
+    margin-left: 10px;
+    color: black;
 }
 
 .Idees
@@ -32,6 +31,8 @@
     background-color:#FFE3BA;
     margin-left: 5px;
     margin-right: 15px;
+    padding: 15px;
+    color: black;
 }
 
 .Admin
@@ -40,4 +41,44 @@
     text-decoration: none;
     background-color:#FFE3BA;
     margin-left: 5px;
+    margin-right: 5px;
+    padding: 15px;
+    color: black;
+}
+
+.titres_site
+{
+    display: flex;
+    justify-content: flex-start;
+    background-color:#FFE3BA;
+    margin-left: 10%;
+    padding: 2px;
+}
+
+.titre
+{
+    font-size: 40px;
+    text-transform: uppercase;
+    background-color:#FFE3BA;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 0px;
+}
+.sous-titre
+{
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color:#FFE3BA;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.titre_admin
+{
+    color: white;
+}
+
+.titre_idees
+{
+    color: white;
 }

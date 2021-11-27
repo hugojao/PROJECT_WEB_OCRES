@@ -5,7 +5,7 @@ const Idees = () => {
     return (
         <div>
             <Navbar/>
-            <h1>LES IDEES A DONNER</h1>
+            <h1 className="titre_idees">Donnez nous vos idées !</h1>
         </div>
     );
 };
