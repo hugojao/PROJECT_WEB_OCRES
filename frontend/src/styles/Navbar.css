@@ -1,9 +1,9 @@
-navbar {
+.navbar {
     height: 50pt;
     background-color: #FFE3BA;
 
 }
-.liste{
+.link{
     list-style-type:none;
     background-color: #FFE3BA;
     height: 100%;
