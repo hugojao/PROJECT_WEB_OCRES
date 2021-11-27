@@ -3,7 +3,6 @@
     font-family: 'Century gothic', 'sans-serif';
     background-color: #E94C4C;
 }
-
 .navbar {
     height: 60px;
     background-color: #FFE3BA;
@@ -34,6 +33,7 @@
     padding: 15px;
     color: black;
 }
+
 
 .Admin
 {
@@ -81,4 +81,5 @@
 .titre_idees
 {
     color: white;
+
 }
