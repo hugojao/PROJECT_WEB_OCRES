@@ -3,6 +3,7 @@ import Meme from '../components/Meme';
 import Navbar from '../components/Navbar';
 import Citation from '../components/Citations';
 import Citationsb from '../components/Citationsb';
+import Idee from '../components/Idee';
 
 const Home = () => {
     return (
@@ -11,6 +12,8 @@ const Home = () => {
             <Meme/>
             <Citation/>
             <Citationsb/>
+            <Idee/>
+
         </div>
     );
 };

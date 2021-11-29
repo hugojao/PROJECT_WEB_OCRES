@@ -26,8 +26,8 @@ const Idee = () => {
 
     return (
         <div>
-            <h1>Kanye west a dit :</h1>
-            <button onClick={fetchData}>Autre meme</button>
+            <h1>Need an idea of activity ? :</h1>
+            <button onClick={fetchData}>NEW ONE</button>
             {state.joke}
         </div>
     );
