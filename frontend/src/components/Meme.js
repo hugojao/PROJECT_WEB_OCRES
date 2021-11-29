@@ -1,4 +1,5 @@
 import React , {useState , useEffect} from 'react';
+import '../styles/Meme.css';
 
 const Meme = () => {
     const[memes , setMemes] =useState([]);
@@ -15,9 +16,9 @@ const Meme = () => {
     
     return (
        memes.length ? 
-       <div>
-           <button onClick={()=>setMemeIndex(memeIndex +1)}>Autre meme</button>
-           <img src={memes[memeIndex].url}/>
+       <div className="meme">
+           <button className="bouton_meme" onClick={()=>setMemeIndex(memeIndex +1)}>NEW ONE</button>
+           <img className="img_meme" src={memes[memeIndex].url}/>
        </div>: 
        <></>
     );

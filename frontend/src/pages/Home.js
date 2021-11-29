@@ -11,7 +11,6 @@ const Home = () => {
             <Meme/>
             <Citation/>
             <Citationsb/>
-
         </div>
     );
 };
