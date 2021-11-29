@@ -1,11 +1,19 @@
 import React from 'react';
 
-const Card = () => {
+const Card = (props) => {
+    const {country} = props;
+
+
     return (
-        <div>
-        card
-        </div>
-        );
-    };
+        <li className="card">
+            <img src={country.flag} alt="flag" />
+            <div className="data-container">
+                <ul>
+                    <li>{country.name}</li>
+                </ul>
+            </div>
+        </li>
+    );
+};
     
     export default Card;

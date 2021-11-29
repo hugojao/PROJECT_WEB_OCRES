@@ -3,7 +3,8 @@ import { useEffect , useState} from 'react';
 import axios from 'axios';
 
 
-const Citations = () => {
+const Idee = () => {
+
         const [state , setState ] = useState ({
             joke :''
         });
@@ -13,11 +14,11 @@ const Citations = () => {
         }, []);
 
         const fetchData = async () => {
-        const result= await axios.get("https://api.kanye.rest");
-        console.log(result.data.quote);
+        const result= await axios.get("http://www.boredapi.com/api/activity/");
+        console.log(result.data.activity);
         setState({
             ...state,
-            joke : result.data.quote
+            joke : result.data.activity
         })
 
     }
@@ -32,4 +33,4 @@ const Citations = () => {
     );
 };
 
-export default Citations;
+export default Idee;
