@@ -15,11 +15,4 @@ const Card = (props) => {
         </li>
     );
 };
-    
-    export default Card;
-
-
-    import React from 'react';
-    
-
-rsc
+export default Card;
