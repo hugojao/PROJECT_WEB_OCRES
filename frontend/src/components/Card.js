@@ -15,5 +15,4 @@ const Card = (props) => {
         </li>
     );
 };
-    
-    export default Card;
+export default Card;
