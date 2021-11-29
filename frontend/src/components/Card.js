@@ -17,3 +17,9 @@ const Card = (props) => {
 };
     
     export default Card;
+
+
+    import React from 'react';
+    
+
+rsc
