@@ -1,12 +1,9 @@
 import React from 'react';
 import { useEffect , useState} from 'react';
 import axios from 'axios';
-
+import '../styles/Meme.css';
 
 const Citations = () => {
-
-    
-
         const [state , setState ] = useState ({
             joke :''
         });
@@ -27,10 +24,10 @@ const Citations = () => {
 
 
     return (
-        <div>
-            <h1>Kanye west a dit :</h1>
-            <button onClick={fetchData}>Autre meme</button>
-            {state.joke}
+        <div className="kanye">
+            <h1 className="kanye_titre">Kanye west a dit :</h1>
+            <button className="bouton_kanye" onClick={fetchData}>NEW ONE</button>
+            <section className="quote"> {state.joke} </section>
         </div>
     );
 };
