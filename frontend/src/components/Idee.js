@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect , useState} from 'react';
 import axios from 'axios';
+import '../styles/Style.css';
 
 
 const Idee = () => {
@@ -25,10 +26,10 @@ const Idee = () => {
 
 
     return (
-        <div>
-            <h1>Kanye west a dit :</h1>
-            <button onClick={fetchData}>Autre meme</button>
-            {state.joke}
+        <div className="idee">
+            <h1 className="titre_idee">Tu t'ennuies ? Clique pour savoir comment t'occuper !</h1>
+            <button className="bouton_idee" onClick={fetchData}>NEW ONE</button>
+            <section className="activité"> {state.joke} </section>
         </div>
     );
 };

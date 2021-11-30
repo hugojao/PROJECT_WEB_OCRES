@@ -1,5 +1,5 @@
 import React , {useState , useEffect} from 'react';
-import '../styles/Meme.css';
+import '../styles/Style.css';
 
 const Meme = () => {
     const[memes , setMemes] =useState([]);
