@@ -13,7 +13,6 @@ const Home = () => {
             <Citation/>
             <Citationsb/>
             <Idee/>
-
         </div>
     );
 };

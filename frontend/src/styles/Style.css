@@ -1,0 +1,379 @@
+.meme
+{
+    float: left;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-right: 30px;
+}
+.img_meme
+{
+    height: 500px;
+    width: 500px;
+}
+.kanye
+{
+    display: flex;
+    flex-direction: row;
+    block-size: 150px;
+    border-width:2px;
+    border-style:solid;
+    border-color:white;
+    border-radius: 10px;
+    width: 900px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.kanye_titre
+{
+    font-size: 20px;
+    margin-left: 10px;
+    max-width: 550px;
+    margin-top: 20px;
+    color: white;
+}
+.quote
+{
+    font-size: 20px;
+    margin-top: 18px;
+    max-height: 300px;
+    max-width: 550px;
+    margin-bottom: 18px;
+    margin-left: 10px;
+    font-weight: 800;
+    color: white;
+    text-align-last: left;
+    text-indent: 0;
+}
+.chuck
+{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    width: 900px;
+    block-size: 150px;
+    border-radius: 10px;
+    border-width:2px;
+    border-style:solid;
+    border-color:white;
+}
+.titre_chuck
+{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 20px;
+    max-width: 550px;
+    color: white;
+}
+.joke
+{
+    font-size: 20px;
+    margin-top: 18px;
+    max-height: 300px;
+    max-width: 550px;
+    margin-bottom: 18px;
+    font-weight: 800;
+    color: white;
+    text-align-last: left;
+    text-indent: 0;
+
+}
+.idee
+{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    block-size: 150px;
+    border-style:solid;
+    border-color:white;
+    border-radius: 10px;
+    width: 900px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.activité
+{
+    font-size: 20px;
+    margin-top: 25px;
+    max-height: 300px;
+    max-width: 400px;
+    margin-bottom: 18px;
+    font-weight: 800;
+    color: white;
+    text-align-last: left;
+    text-indent: 0;
+}
+.titre_idee
+{
+    font-size: 20px;
+    margin-left: 5px;
+    margin-top: 20px;
+    max-width: 280px;
+    color: white;
+    text-indent: 0;
+    
+}
+@keyframes glowing 
+{
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+.bouton_meme
+{
+    margin-top: 19px;
+    cursor: pointer;
+    background: #111;
+    border-color: white;
+    font-family: 'Century gothic', 'sans-serif';
+    color: white;
+    background: #111;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 50px;
+    width: 220px;
+    max-width: 90px;
+    max-height: 30px;
+}
+.bouton_meme:before
+{
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+.bouton_meme:active{
+    color: #000
+}
+.bouton_meme:active:after{
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+.bouton_meme:hover:before {
+    opacity: 1;
+}
+.bouton_meme:after
+{
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.bouton_kanye
+{
+    margin-top: 19px;
+    cursor: pointer;
+    background: #111;
+    font-family: 'Century gothic', 'sans-serif';
+    border-color: white;
+    color: white;
+    background: #111;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 50px;
+    width: 220px;
+    max-width: 90px;
+    max-height: 30px;
+}
+.bouton_kanye:before
+{
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+.bouton_kanye:active{
+    color: #000
+}
+.bouton_kanye:active:after{
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+.bouton_kanye:hover:before {
+    opacity: 1;
+}
+.bouton_kanye:after
+{
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+.bouton_chuck
+{
+    margin-top: 19px;
+    cursor: pointer;
+    background: #111;
+    border-color: white;
+    font-family: 'Century gothic', 'sans-serif';
+    color: white;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 50px;
+    width: 220px;
+    max-width: 90px;
+    max-height: 30px;
+}
+.bouton_chuck:before
+{
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+.bouton_chuck:active{
+    color: #000
+}
+.bouton_chuck:active:after{
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+.bouton_chuck:hover:before {
+    opacity: 1;
+}
+.bouton_chuck:after
+{
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+.bouton_idee
+{
+    margin-top: 25px;
+    cursor: pointer;
+    background: #111;
+    border-color: white;
+    font-family: 'Century gothic', 'sans-serif';
+    color: white;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 7px;
+    height: 50px;
+    width: 220px;
+    max-width: 90px;
+    max-height: 30px;
+}
+.bouton_idee:before
+{
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+.bouton_idee:active{
+    color: #000
+}
+.bouton_idee:active:after{
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+.bouton_idee:hover:before {
+    opacity: 1;
+}
+.bouton_idee:after
+{
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}

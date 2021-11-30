@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect , useState} from 'react';
 import axios from 'axios';
-import '../styles/Meme.css';
+import '../styles/Style.css';
 
 const Citations = () => {
         const [state , setState ] = useState ({
