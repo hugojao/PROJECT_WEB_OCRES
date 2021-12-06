@@ -4,6 +4,8 @@ import Navbar from '../components/Navbar';
 import Citation from '../components/Citations';
 import Citationsb from '../components/Citationsb';
 import Idee from '../components/Idee';
+import CardHandler from '../components/CardHandler';
+import Qr from '../components/Qr';
 
 const Home = () => {
     return (
@@ -13,6 +15,9 @@ const Home = () => {
             <Citation/>
             <Citationsb/>
             <Idee/>
+            <CardHandler/>
+            <Qr/>
+
         </div>
     );
 };

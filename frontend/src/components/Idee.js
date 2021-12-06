@@ -30,6 +30,7 @@ const Idee = () => {
             <h1 className="titre_idee">Tu t'ennuies ? Clique pour savoir comment t'occuper !</h1>
             <button className="bouton_idee" onClick={fetchData}>NEW ONE</button>
             <section className="activité"> {state.joke} </section>
+            </div>
     );
 };
 
