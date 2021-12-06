@@ -7,7 +7,7 @@ const Meme = () => {
 
     useEffect(() => {
         fetch("https://api.imgflip.com/get_memes").then(res => {
-            res.json().then(res => { 
+            res.json().then(res => {
                 const memes = res.data.memes;
                 setMemes(memes);
             });

@@ -26,7 +26,7 @@ const Citationsb = () => {
     return (
         <div className="chuck">
             <h1 className="titre_chuck">Chuck Norris once said :</h1>
-            <button className="bouton_chuck" onClick={fetchData}>ANOTHER CHUCK</button>
+            <button className="bouton_chuck" onClick={fetchData}>NEW ONE</button>
             <section className="joke"> {state.joke} </section>
         </div>
     );
