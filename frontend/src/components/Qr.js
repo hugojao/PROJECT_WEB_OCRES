@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 //import { makeStyles} from '@material-ui/core';
 import QRCode from 'qrcode';
+import QR from '../styles/QR.css'
+
 
 
 
@@ -19,14 +21,14 @@ function Qr() {
   return (
     <div className="qrcode">
     <input className="entrée" label="Enter Text Here" onChange={(e) => setText(e.target.value)}/>
-    <button  
+    <button  className="qr_btn"
     onClick={() => generateQrCode()}>Generate</button>
     <br/>
     <br/>
     <br/>
     {imageUrl ? (
-      <a href={imageUrl} download>
-      <img src={imageUrl} alt="img"/>
+      <a className ="lien_image" href={imageUrl} download>
+      <img className="qr" src={imageUrl} alt="img"/>
       </a>) : null}
       
       </div>

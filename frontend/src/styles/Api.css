@@ -1,0 +1,21 @@
+.API
+{
+    display: flex;
+    flex-direction: row;
+    block-size: 110px;
+    border-width:2px;
+    border-style:solid;
+    border-color:white;
+    border-radius: 10px;
+    width: 980px;
+    margin-top: 10vw;
+    margin-bottom: 10px;
+}
+
+.API_titre
+{
+    color: white;
+    margin-left: 2vw;
+    margin-top: 2vw;
+    font-family: 'Century gothic', 'sans-serif';
+}

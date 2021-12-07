@@ -1,0 +1,28 @@
+.qrcode
+{
+    display: flex;
+    justify-content: start;
+    margin-top: -10vw;
+    margin-left: 2vw;
+}
+
+.qr_btn
+{
+    margin-top: 2.5vw;
+    background-color:white;
+    color: black;
+    font-family: 'Century gothic', 'sans-serif';
+    block-size: 2.5vw;
+}
+
+.entrée
+{
+    background-color:white;
+    block-size: 2vw;
+    margin-top: 2.5vw;
+}
+
+.qr
+{
+    block-size: 115px;
+}
