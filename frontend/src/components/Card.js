@@ -27,7 +27,7 @@ class Card extends Component {
         ]}
       >
         <figure className="Card" style={{ ...this._style }}>
-          <img src={this.props.src} alt={this.props.alt} />
+          <img className="card_image" src={this.props.src} alt={this.props.alt} />
         </figure>
       </AnimateKeyframes>
     );

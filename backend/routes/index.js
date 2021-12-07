@@ -3,9 +3,13 @@ import DataStore from 'nedb'
 import morgan from 'morgan'
 import mongoose from 'mongoose'
 import nodemon from 'nodemon'
+import concurrently from 'concurrently'
 import { Double } from 'bson'
 
-const PORT = 8000;
+
+//Start express
+const app = express()
+const PORT = process.env.PORT || 8000
 
 //BDD
 const db = new DataStore({ filename: 'stat' })
@@ -55,11 +59,20 @@ newForm.save((error) => {
         }
 });
 
-//Start express
-const app = express()
-
 app.use(express.json())
 
+app.all('/:id', function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Method", "GET, POST, OPTION");
+    res.header("Access-Control-Allow-Headers", "Content-Type");
+    next()
+  });
+  app.all('/', function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Method", "GET, POST, OPTION");
+    res.header("Access-Control-Allow-Headers", "Content-Type");
+    next()
+  });
 //API
 
 //Create
@@ -69,7 +82,15 @@ app.get('/api', (req, res) => {
         time_on_ticktok: 2,
         age: 21
     };
-    res.json(data);
+    Form.find({ })
+        .then((data) => {
+            console.log('Data', data);
+            res.status(200).json(data);
+        })
+
+        .catch((error) => {
+            console.log('error', daerrorta);
+        });
 });
 
 app.get('/api/name', (req, res) => {
